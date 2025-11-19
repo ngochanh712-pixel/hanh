@@ -1,25 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minigame Trắc nghiệm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minigame - Redirect</title>
+
+  <!-- Meta refresh (fallback) -->
+  <meta http-equiv="refresh" content="0; url=https://ai.studio/apps/drive/1loUFF7q34OdboPUeYciZbkEsGUeAfi32?fullscreenApplet=true">
+
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-    iframe {
-      width: 100vw;
-      height: 100vh;
-      border: none;
-    }
+    body { font-family: Arial, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f5f7fa; color:#222; }
+    .box { text-align:center; max-width:720px; padding:20px; }
+    a.button { display:inline-block; margin-top:18px; padding:10px 18px; background:#0b74de; color:#fff; text-decoration:none; border-radius:6px; }
   </style>
 </head>
 <body>
-  <iframe src="https://ai.studio/apps/drive/1loUFF7q34OdboPUeYciZbkEsGUeAfi32?fullscreenApplet=true"></iframe>
+  <div class="box">
+    <h2>Chuyển đến minigame...</h2>
+    <p>Nếu trang không tự động chuyển, bấm nút bên dưới để mở minigame (mở trong tab mới).</p>
+    <p>
+      <a class="button" href="https://ai.studio/apps/drive/1loUFF7q34OdboPUeYciZbkEsGUeAfi32?fullscreenApplet=true" target="_blank" rel="noopener">Mở Minigame</a>
+    </p>
+    <p style="font-size:12px; color:#666; margin-top:10px;">(AI Studio thường chặn nhúng trong iframe, nên ta chuyển hướng trực tiếp để đảm bảo hoạt động trên điện thoại.)</p>
+  </div>
+
+  <!-- JS redirect (nhiều trình duyệt ưu tiên JS) -->
+  <script>
+    // bảo đảm redirect bằng JS nhanh hơn meta
+    window.location.replace("https://ai.studio/apps/drive/1loUFF7q34OdboPUeYciZbkEsGUeAfi32?fullscreenApplet=true");
+  </script>
 </body>
 </html>
